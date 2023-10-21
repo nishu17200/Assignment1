@@ -1,0 +1,44 @@
+/* Block */
+.code-editor {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Elements */
+.code-editor .toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.code-editor .code-input {
+    flex: 1;
+    border: 1px solid #ddd;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    padding: 100px;
+    resize: none;
+    border-radius: 32px;
+    border-color: #1c0137;
+}
+
+/* Modifiers */
+.code-editor .toolbar button {
+    background-color: #6b4095;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px 100px / 120px 100px;
+}
+
+.code-editor .toolbar button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.toolbar {
+      border-radius: 32px;
+}
